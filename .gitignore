@@ -5,13 +5,13 @@ __pycache__/
 # Ignore virtual environment
 
 venv/
-.env/
+
 
 # Ignore uploaded files
 uploads/
 
 # Ignore environment variables
-.env
+
 
 # Ignore OS or editor-specific files
 .DS_Store

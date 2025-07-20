@@ -1,6 +1,4 @@
-from dotenv import load_dotenv
 
-load_dotenv()
 import requests
 from flask import Flask, request, jsonify
 from deepface import DeepFace
@@ -10,7 +8,7 @@ app = Flask(__name__)
 UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-YOUTUBE_API_KEY = os.getenv('YOUTUBE_API_KEY')  # Replace with your actual API key
+YOUTUBE_API_KEY = 'AIzaSyBt6xnbfqxip8szsWiJ-RiE3ENMRrR7rw0'  # Replace with your actual API key
 
 def get_youtube_songs(query, max_total=20):
     songs = []
